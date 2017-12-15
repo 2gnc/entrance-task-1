@@ -4,7 +4,7 @@ const scheme = require('./scheme');
 
 const Op = Sequelize.Op;
 
-const sequelize = new Sequelize(null, null, {
+const sequelize = new Sequelize( null, null, null, {  //тут был пропущен обязательный аргумент
   dialect: 'sqlite',
   storage: 'db.sqlite3',
 
