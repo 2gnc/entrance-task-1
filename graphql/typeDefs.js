@@ -64,7 +64,7 @@ type Mutation {
   updateRoom(id: ID!, input: RoomInput!): Room
   removeRoom(id: ID!): Room
 
-  createEvent(input: EventInput!, usersIds: [ID], roomId: ID!): Event
+  createEvent(input: EventInput!, User: [ID], Room: ID!): Event
   updateEvent(id: ID!, input: EventInput!): Event
   removeUserFromEvent(id: ID!, userId: ID!): Event
   addUserToEvent(id: ID!, userId: ID!): Event
