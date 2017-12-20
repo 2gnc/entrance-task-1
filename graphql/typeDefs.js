@@ -13,11 +13,6 @@ input UserInput {
     homeFloor: Int
 }
 
-type UserRoom {
-    id: ID!
-    title: String!
-}
-
 type Room {
     id: ID!
     title: String!
@@ -56,6 +51,7 @@ type Query {
 }
 
 type Mutation {
+
   createUser(input: UserInput!): User
   updateUser(id: ID!, input: UserInput!): User
   removeUser(id: ID!): User
